@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="assets/img/icon/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31e4f9cf68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="max-h-screen overflow-y-auto">
+    <header class="bg-white relative shadow-lg py-2 lg:py-0 lg:fixed w-full z-50 ">
+        <div class="lg:px-5">
+            <div class="grid grid-cols-12 items-center">
+                <!-- left searchbar -->
+                <div class="col-span-6 lg:col-span-3">
+                    <div class="flex items-center lg:pr-10">
+                        <div class="mr-3">
+                            <!-- logo -->
+                            <a href="#" class="text-primary text-4xl">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="w-full">
+                            <!-- input -->
+                            <form action="#">
+                                <div class="relative">
+                                    <input type="text" placeholder="search facebook" class="fb-input bg-gray pl-10">
+                                    <button type="submit"
+                                        class="absolute text-sm text-black text-opacity-60 font-normal left-0 top-1 pl-4 pt-2">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- main menu -->
+                <div class="col-span-12 order-1 lg:order-0 lg:block lg:col-span-6 px-5">
+                    <nav class="main-menu">
+                        <ul class="flex justify-between">
+                            <li>
+                                <a href="#" class="active">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-user-group"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-brands fa-square-youtube"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-shop"></i>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- right menu -->
+                <div class="col-span-6 lg:col-span-3 lg:order-1">
+                    <nav class="mr-20 lg:mr-0">
+                        <ul class="flex justify-end items-center">
+                            <li>
+                                <a href="#" class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon">
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                </a>
+                            </li>
+                            <li class="hidden lg:block"><a href="#" class="icon">
+                                    <i class="fa-solid fa-bell"></i>
+                                </a></li>
+                            <li class="hidden lg:block"><a href="#" class="icon">
+                                    <img src="assets/img/profile/user.jpg" alt="user" class="rounded-full">
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- menu bar button -->
+        <div class="absolute lg:hidden z-50 menu-btn top-4 right-10">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main class="container  lg:pt-16">
+        <div class="grid grid-cols-12 ">
+            <aside class="col-span-12 lg:col-span-3 lg:mt-3 left-slide   ">
+                <div class=" left-sidebar-scroll  max-h-screen ">
+                    <ul class="left-sidebar ">
+                        <li class="py-2 px-2 rounded-md hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3">
+                                        <img src="assets/img/profile/user.jpg" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ">Shakil Anwar</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/friends.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light capitalize">Friends</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/groups.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light capitalize ">Groups</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/marketplace.png" alt="user"
+                                            class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">marketplace</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/watch.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">watch</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/memories.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">memories</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/ad.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">add center</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/add-manager.png" alt="user"
+                                            class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">ads manager</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/blood.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">Blood donations</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/climate.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">climate science center</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/commiunity.png" alt="user"
+                                            class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">commiunity help</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/covid.png" alt="user" class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">covid 19 information center</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/emotional.png" alt="user"
+                                            class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">emotional health</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-2 px-2 rounded-md  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <a href="#">
+                                <div class="flex items-center">
+                                    <div class="mr-3 text-info text-base ">
+                                        <img src="assets/img/icon/messenger.png" alt="user"
+                                            class="h-8 w-8 rounded-full">
+                                    </div>
+                                    <div>
+                                        <span class="text-sm font-light ca">messenger</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- see more button start -->
+                    <div class="flex items-center px-2 py-2  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                        <div class="w-8 h-8 rounded-full text-black text-sm flex
+                    bg-opacity-50
+                     justify-center items-center bg-secondary-400">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="ml-3">
+                            <button type="button" class="capitalize text-sm font-light">see more</button>
+                        </div>
+                    </div>
+                    <!-- see more button end -->
+                    <div class="border-[1px] border-secondary-700 border-opacity-25 my-3 max-w-[270px]"></div>
+                    <div class="groups">
+                        <div class="flex justify-between shortcut">
+                            <div>
+                                <span class="block capitalize text-graytwo font-medium">your shorcuts</span>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="capitalize  text-primary text-sm text-opacity-80">edits</a>
+                            </div>
+                        </div>
+                        <ul class="left-sidebar ">
+                            <li class="py-2 px-2 rounded-md hover:bg-secondary-400 hover:bg-opacity-10 ">
+                                <a href="#">
+                                    <div class="flex items-center">
+                                        <div class="mr-3">
+                                            <img src="assets/img/groups/thumbnail.jpg" alt="user"
+                                                class="h-8 w-9 rounded-md">
+                                        </div>
+                                        <div>
+                                            <span class="text-sm font-light tracking-tight leading-4">Complete web
+                                                development batch 6</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="py-2 px-2 rounded-md hover:bg-secondary-400 hover:bg-opacity-10 ">
+                                <a href="#">
+                                    <div class="flex items-center">
+                                        <div class="mr-3">
+                                            <img src="assets/img/groups/boi-poka.jpg" alt="user"
+                                                class="h-8 w-9 rounded-md">
+                                        </div>
+                                        <div>
+                                            <span class="text-sm font-light tracking-tight leading-4">boiPoka -
+                                                বইপোকা</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="py-2 px-2 rounded-md hover:bg-secondary-400 hover:bg-opacity-10 ">
+                                <a href="#">
+                                    <div class="flex items-center">
+                                        <div class="mr-3">
+                                            <img src="assets/img/groups/thumbnail.jpg" alt="user"
+                                                class="h-8 w-9 rounded-md">
+                                        </div>
+                                        <div>
+                                            <span class="text-sm font-light tracking-tight leading-4">Learn With Hasin
+                                                Hayder</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="py-2 px-2 rounded-md hover:bg-secondary-400 hover:bg-opacity-10 ">
+                                <a href="#">
+                                    <div class="flex items-center">
+                                        <div class="mr-3">
+                                            <img src="assets/img/groups/boi-poka.jpg" alt="user"
+                                                class="h-8 w-9 rounded-md">
+                                        </div>
+                                        <div>
+                                            <span class="text-sm font-light tracking-tight leading-4">বই পড়ুন - সুন্দর
+                                                জীবন
+                                                তৈরি করুন</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="py-2 px-2 rounded-md hover:bg-secondary-400 hover:bg-opacity-10 ">
+                                <a href="#">
+                                    <div class="flex items-center">
+                                        <div class="mr-3">
+                                            <img src="assets/img/groups/food-panda.jpg" alt="user"
+                                                class="h-8 w-9 rounded-md">
+                                        </div>
+                                        <div>
+                                            <span class="text-sm font-light tracking-tight leading-4">food panda voucher
+                                                code</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- see more button start -->
+                        <div class="flex items-center px-2 py-2  hover:bg-secondary-400 hover:bg-opacity-10 ">
+                            <div class="w-8 h-8 rounded-full text-black text-sm flex
+                                        bg-opacity-50
+                                         justify-center items-center bg-secondary-400">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="ml-3">
+                                <button type="button" class="capitalize text-sm font-light">see more</button>
+                            </div>
+                        </div>
+                        <!-- see more button end -->
+                        <!-- some links -->
+                        <div class="capitalize mt-6 pl-2 font-light
+                     pb-3 text-xs text-secondary-400
+                     children:mr-2 
+                     ">
+                            <a href="#" class="hover:underline">privecy.</a>
+                            <a href="#" class="hover:underline">terms.</a>
+                            <a href="#" class="hover:underline">advertising.</a>
+                            <a href="#" class="hover:underline">adchoices.</a>
+                            <a href="#" class="hover:underline">cookies.</a>
+                            <a href="#" class="hover:underline">more.</a>
+                            <a href="#" class="hover:underline">meta &copy;2022</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- main area -->
+            <section class="col-span-12 lg:col-span-6 px-10 lg:scroll-main-area">
+                <!-- story area -->
+                <div class="mt-5 lg:mt-7 ">
+                    <!-- wrapper -->
+                    <div class="grid grid-cols-4 md:grid-cols-5 gap-2 -z-0 relative">
+                        <!-- single item -->
+
+                        <div class="story-wrapper relative rounded-lg pb-5 h-[202px]
+                         bg-white shadow-lg
+                        ">
+                            <a href="#" class="relative story-single-item">
+                                <div class="h-[152px] w-full img-area overflow-hidden">
+                                    <img src="assets/img/story/story.jpg" alt="user" class="w-full rounded-xl h-full">
+                                </div>
+                                <div class="absolute z-20 left-10 top-[150px]">
+                                    <div class="bg-primary text-white w-9 h-9
+                                                                        flex justify-center items-center
+                                                                        border-[3px] border-white
+                                                                         text-base rounded-full">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class=" pt-5 flex flex-col items-center ">
+                                        <div>
+                                            <span class="block text-center text-sm capitalize font-light">create a
+                                                story</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!-- single item -->
+                        <div class=" story-wrapper relative rounded-lg pb-5
+                         h-[202px] bg-white shadow-lg
+                        ">
+                            <a href="#" class="relative story-single-item">
+                                <div class=" w-full img-area overflow-hidden">
+                                    <img src="assets/img/story/fahima.jpg" alt="user"
+                                        class="w-full rounded-xl h-[204px]">
+                                </div>
+                                <div class="absolute z-20 left-4 top-3">
+                                    <div class="bg-primary text-white w-10 h-10
+                                                                        flex justify-center items-center
+                                                                        border-[5px] border-primary
+                                                                         text-base rounded-full">
+                                        <a href="#" class="relative">
+                                            <img src="assets/img/story/fahima-profile.jpg" class="rounded-full"
+                                                alt="story">
+                                            <span
+                                                class="absolute top-4 -right-2 h-3 w-3 border-2 border-white rounded-full bg-success"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-3 z-10">
+                                    <a href class="block ml-2 text-white text-xs">Fahima Hiya</a>
+                                </div>
+
+                            </a>
+                        </div>
+                        <!-- single item -->
+                        <div class=" story-wrapper relative rounded-lg 
+                        pb-5 h-[202px] bg-white shadow-lg
+                        ">
+                            <a href="#" class="relative story-single-item">
+                                <div class=" w-full img-area overflow-hidden">
+                                    <img src="assets/img/story/car.jpg" alt="user" class="w-full rounded-xl h-[204px]">
+                                </div>
+                                <div class="absolute z-20 left-4 top-3">
+                                    <div class="bg-primary text-white w-10 h-10
+                                                                        flex justify-center items-center
+                                                                        border-[5px] border-primary
+                                                                         text-base rounded-full">
+                                        <a href="#" class="relative">
+                                            <img src="assets/img/story/milton-profile.jpg" class="rounded-full"
+                                                alt="story">
+                                            <span
+                                                class="absolute top-4 -right-2 h-3 w-3 border-2 border-white rounded-full bg-success"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-3 z-10">
+                                    <a href class="block ml-2 text-white text-xs">Milton Hossain</a>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- single item -->
+                        <div class="story-wrapper relative rounded-lg pb-5 h-[202px]
+                         bg-white shadow-lg
+                        ">
+                            <a href="#" class="relative story-single-item">
+                                <div class=" w-full img-area overflow-hidden">
+                                    <img src="assets/img/story/himu.jpg" alt="user" class="w-full rounded-xl h-[204px]">
+                                </div>
+                                <div class="absolute z-20 left-4 top-3">
+                                    <div class="bg-primary text-white w-10 h-10
+                                                                        flex justify-center items-center
+                                                                        border-[5px] border-primary
+                                                                         text-base rounded-full">
+                                        <a href="#" class="relative">
+                                            <img src="assets/img/story/himu-profile.jpg" class="rounded-full"
+                                                alt="story">
+                                            <span
+                                                class="absolute top-4 -right-2 h-3 w-3 border-2 border-white rounded-full bg-success"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-3 z-10">
+                                    <a href class="block ml-2 text-white text-xs">Abu Sayed Himu</a>
+                                </div>
+
+                            </a>
+                        </div>
+                        <!-- single item -->
+                        <div class=" story-wrapper relative hidden md:block rounded-lg pb-5 
+                        h-[202px] bg-white shadow-lg
+                        ">
+                            <a href="#" class="relative story-single-item">
+                                <div class=" w-full img-area overflow-hidden">
+                                    <img src="assets/img/story/nusaiba.jpg" alt="user"
+                                        class="w-full rounded-xl h-[204px]">
+                                </div>
+                                <div class="absolute z-20 left-4 top-3">
+                                    <div class="bg-primary text-white w-10 h-10
+                                                                        flex justify-center items-center
+                                                                        border-[5px] border-primary
+                                                                         text-base rounded-full">
+                                        <a href="#">
+                                            <img src="assets/img/story/nusiaba-profile.jpg" class="rounded-full"
+                                                alt="story">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-3 z-10">
+                                    <a href class="block ml-2 text-white text-xs">Nusaiba Nur</a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="absolute -right-[14px] top-20">
+                            <div class="w-9 h-9 rounded-full bg-white
+                              flex justify-center items-center text-secondary-400
+                              ring-1 ring-black ring-opacity-20
+                              relative 
+                              
+                               hover:before:absolute hover:before:left-0 hover:before:top-0 hover:before:content-['']
+                              hover:before:rounded-full hover:before:h-full hover:before:w-full
+                              hover:before:bg-secondary-400 hover:before:bg-opacity-10
+                             ">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- wrapper -->
+                <div class="mt-8 lg:px-6 ">
+                    <!-- post textarea start -->
+                    <div>
+                        <div class="bg-white pb-3 pt-3 w-full px-5 rounded-md shadow-lg">
+                            <div>
+                                <div dialog-trigger="true">
+
+                                    <div>
+                                        <div class="flex items-center">
+                                            <!-- top -->
+                                            <div>
+                                                <!-- author -->
+                                                <a href="#">
+                                                    <img src="assets/img/profile/user.jpg" alt="author"
+                                                        class="rounded-full ring-1 ring-graytwo ring-opacity-20">
+                                                </a>
+                                            </div>
+                                            <div class="ml-2 w-full">
+                                                <!-- input box -->
+                                                <form action="#">
+                                                    <input type="text" class="fb-input bg-gray w-full 
+                                             placeholder:font-normal hover:bg-secondary-400 hover:bg-opacity-20
+                                             placeholder:text-base" placeholder="what's on your mind,Shakil?">
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                        <div class="border-[1px] border-black border-opacity-10  mt-2"></div>
+                                        <div class="flex justify-between items-center mt-3">
+                                            <!-- bottom -->
+                                            <!-- item one -->
+                                            <a href="#">
+                                                <div
+                                                    class="flex items-center  py-1 rounded-md px-4 hover:bg-secondary-400 hover:bg-opacity-10">
+                                                    <div class="text-pink">
+                                                        <!-- icon -->
+                                                        <svg fill="currentColor" viewBox="0 0 24 24" width="20px"
+                                                            height="24px"
+                                                            class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 fxtw5amg rgmg9uty b73ngqbp">
+                                                            <g fill-rule="evenodd" transform="translate(-444 -156)">
+                                                                <g>
+                                                                    <path
+                                                                        d="M113.029 2.514c-.363-.088-.746.014-1.048.234l-2.57 1.88a.999.999 0 0 0-.411.807v8.13a1 1 0 0 0 .41.808l2.602 1.901c.219.16.477.242.737.242.253 0 .508-.077.732-.235.34-.239.519-.65.519-1.065V3.735a1.25 1.25 0 0 0-.971-1.22m-20.15 6.563c.1-.146 2.475-3.578 5.87-3.578 3.396 0 5.771 3.432 5.87 3.578a.749.749 0 0 1 0 .844c-.099.146-2.474 3.578-5.87 3.578-3.395 0-5.77-3.432-5.87-3.578a.749.749 0 0 1 0-.844zM103.75 19a3.754 3.754 0 0 0 3.75-3.75V3.75A3.754 3.754 0 0 0 103.75 0h-10A3.754 3.754 0 0 0 90 3.75v11.5A3.754 3.754 0 0 0 93.75 19h10z"
+                                                                        transform="translate(354 158.5)"></path>
+                                                                    <path
+                                                                        d="M98.75 12c1.379 0 2.5-1.121 2.5-2.5S100.129 7 98.75 7a2.503 2.503 0 0 0-2.5 2.5c0 1.379 1.121 2.5 2.5 2.5"
+                                                                        transform="translate(354 158.5)"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <span class="block ml-2 text-sm text-secondary-400">Live
+                                                        Video</span>
+                                                </div>
+                                            </a>
+                                            <!-- item two -->
+                                            <a href="#">
+                                                <div
+                                                    class="flex items-center px-4 py-1 rounded-md hover:bg-secondary-400 hover:bg-opacity-10">
+                                                    <div class="text-pink">
+                                                        <!-- icon -->
+                                                        <svg fill="currentColor" viewBox="0 0 24 24" width="20px"
+                                                            height="24px"
+                                                            class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 j58f7537 rgmg9uty b73ngqbp">
+                                                            <g fill-rule="evenodd" transform="translate(-444 -156)">
+                                                                <g>
+                                                                    <path
+                                                                        d="m96.968 22.425-.648.057a2.692 2.692 0 0 1-1.978-.625 2.69 2.69 0 0 1-.96-1.84L92.01 4.32a2.702 2.702 0 0 1 .79-2.156c.47-.472 1.111-.731 1.774-.79l2.58-.225a.498.498 0 0 1 .507.675 4.189 4.189 0 0 0-.251 1.11L96.017 18.85a4.206 4.206 0 0 0 .977 3.091s.459.364-.026.485m8.524-16.327a1.75 1.75 0 1 1-3.485.305 1.75 1.75 0 0 1 3.485-.305m5.85 3.011a.797.797 0 0 0-1.129-.093l-3.733 3.195a.545.545 0 0 0-.062.765l.837.993a.75.75 0 1 1-1.147.966l-2.502-2.981a.797.797 0 0 0-1.096-.12L99 14.5l-.5 4.25c-.06.674.326 2.19 1 2.25l11.916 1.166c.325.026 1-.039 1.25-.25.252-.21.89-.842.917-1.166l.833-8.084-3.073-3.557z"
+                                                                        transform="translate(352 156.5)"></path>
+                                                                    <path fill-rule="nonzero"
+                                                                        d="m111.61 22.963-11.604-1.015a2.77 2.77 0 0 1-2.512-2.995L98.88 3.09A2.77 2.77 0 0 1 101.876.58l11.603 1.015a2.77 2.77 0 0 1 2.513 2.994l-1.388 15.862a2.77 2.77 0 0 1-2.994 2.513zm.13-1.494.082.004a1.27 1.27 0 0 0 1.287-1.154l1.388-15.862a1.27 1.27 0 0 0-1.148-1.37l-11.604-1.014a1.27 1.27 0 0 0-1.37 1.15l-1.387 15.86a1.27 1.27 0 0 0 1.149 1.37l11.603 1.016z"
+                                                                        transform="translate(352 156.5)"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <span
+                                                        class="block ml-2 text-sm text-secondary-400">photo/video</span>
+                                                </div>
+                                            </a>
+                                            <!-- item three -->
+                                            <a href="#">
+                                                <div
+                                                    class="flex items-center px-4 py-1 rounded-md hover:bg-secondary-400 hover:bg-opacity-10 ">
+                                                    <div class="text-pink">
+                                                        <!-- icon -->
+                                                        <svg fill="currentColor" viewBox="0 0 24 24" width="20px"
+                                                            height="24px"
+                                                            class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 mu8pnim0 rgmg9uty b73ngqbp">
+                                                            <g fill-rule="evenodd" transform="translate(-444 -156)">
+                                                                <g>
+                                                                    <path
+                                                                        d="M107.285 13c.49 0 .841.476.712.957-.623 2.324-2.837 4.043-5.473 4.043-2.636 0-4.85-1.719-5.473-4.043-.13-.48.222-.957.712-.957h9.522z"
+                                                                        transform="translate(353.5 156.5)"></path>
+                                                                    <path fill-rule="nonzero"
+                                                                        d="M114.024 11.5c0 6.351-5.149 11.5-11.5 11.5s-11.5-5.149-11.5-11.5S96.173 0 102.524 0s11.5 5.149 11.5 11.5zm-2 0a9.5 9.5 0 1 0-19 0 9.5 9.5 0 0 0 19 0z"
+                                                                        transform="translate(353.5 156.5)"></path>
+                                                                    <path
+                                                                        d="M99.524 8.5c0 .829-.56 1.5-1.25 1.5s-1.25-.671-1.25-1.5.56-1.5 1.25-1.5 1.25.671 1.25 1.5m8.5 0c0 .829-.56 1.5-1.25 1.5s-1.25-.671-1.25-1.5.56-1.5 1.25-1.5 1.25.671 1.25 1.5m-.739 4.5h-9.522c-.49 0-.841.476-.712.957.623 2.324 2.837 4.043 5.473 4.043 2.636 0 4.85-1.719 5.473-4.043.13-.48-.222-.957-.712-.957m-2.165 2c-.667.624-1.592 1-2.596 1a3.799 3.799 0 0 1-2.596-1h5.192"
+                                                                        transform="translate(353.5 156.5)"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <span
+                                                        class="block ml-2 text-sm text-secondary-400">Feeling/activity</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dialog modal -->
+                                <div class="dialog ">
+                                    <div class="dialog-overlay" dialog-close="true"></div>
+                                    <div class="modal-dialog py-2">
+                                        <div class="dialog-content">
+                                            <div class="dialog-header">
+                                                <div class="w-full pt-3">
+                                                    <h6 class="text-center capitalize text-xl  font-normal">Create Post
+                                                    </h6>
+                                                    <button type="button" class="icon w-9 h-9 text-xl
+                                                 text-secondary-400 hover:bg-secondary-400 hover:bg-opacity-5
+                                                 absolute top-4 right-4" dialog-close="true">
+                                                        <i class="fa-solid fa-xmark"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="dialog-body">
+                                                <!-- profile -->
+                                                <div>
+
+                                                    <div class="flex items-center">
+                                                        <div>
+                                                            <a href="#">
+                                                                <img src="assets/img/profile/user.jpg"
+                                                                    class="w-10 h-10 rounded-full ring-1" alt="user">
+                                                            </a>
+                                                        </div>
+                                                        <div class="ml-3">
+                                                            <a href="#">
+                                                                <span class="text-sm ">Shakil Anwar</span>
+                                                            </a>
+                                                            <br>
+                                                            <a href="#"
+                                                                class="text-xs bg-secondary-400 bg-opacity-20 py-1 px-2 rounded-md">
+                                                                <!-- button -->
+                                                                <i class="fa-solid fa-earth-africa"></i>
+                                                                <span
+                                                                    class="capitalize text-xs mx-[3px] inline-block">public</span>
+                                                                <i class="fa-solid fa-chevron-down"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- text area -->
+                                                <div class="mt-5">
+                                                    <form action="#">
+
+                                                        <textarea rows="4" placeholder="what's on your mind,Shakil?"
+                                                            class="placeholder:capitalize placeholder:text-base 
+                                                placeholder:font-medium w-full border border-secondary-400 border-opacity-10
+                                                rounded-lg p-3
+                                                focus:outline-none"></textarea>
+                                                        <button type="button" class="w-full mt-3 rounded-md
+                                                        capitalize py-2 px-4 bg-primary text-white "> post</button>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- post textarea end -->
+                    <!-- create room area start -->
+                    <div class=" mt-5 relative">
+                        <div class="bg-white flex w-full  py-3  rounded-lg ">
+                            <button type="button" class="border ml-8 border-primary border-opacity-25 
+                           rounded-[355px] py-2 px-3 2xl:px-5  hover:bg-secondary-400 hover:bg-opacity-20">
+                                <div class="flex items-center">
+                                    <i
+                                        style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/ym/r/5zaboDASSye.png?_nc_eui2=AeGGvDU8bdFpzaTi37pVjI4jBQyVXafYdJoFDJVdp9h0mvoN7kL2JHKNQ5UyOmnu9TDClxc4895q9iSXkWQ0swPL');background-position:0 -219px;background-size:auto;width:24px;height:24px;background-repeat:no-repeat;display:inline-block"></i>
+                                    <span class="block ml-2 capitalize text-xs">create room</span>
+                                </div>
+                            </button>
+                            <!-- members start -->
+                            <div class="ml-3">
+                                <ul class="flex items-center space-x-2">
+                                    <li class="relative"><a href="#">
+                                            <img src="assets/img/story/fahima-profile.jpg"
+                                                class="rounded-full ring ring-primary ring-opacity-10" alt="user"></a>
+                                        <span class="absolute bottom-1 -right-[2px] 
+                                    border-white border-2 z-20
+                                    h-3 w-3 rounded-full   bg-green-900"></span>
+                                    </li>
+                                    <li class="relative"><a href="#">
+                                            <img src="assets/img/story/himu-profile.jpg"
+                                                class="rounded-full ring ring-primary ring-opacity-10" alt="user"></a>
+                                        <span class="absolute bottom-1 -right-[2px] 
+                                    border-white border-2 z-20
+                                    h-3 w-3 rounded-full   bg-green-900"></span>
+                                    </li>
+                                    <li class="relative"><a href="#">
+                                            <img src="assets/img/story/himu-profile.jpg"
+                                                class="rounded-full ring ring-primary ring-opacity-10" alt="user"></a>
+                                        <span class="absolute bottom-1 -right-[2px] 
+                                    border-white border-2 z-20
+                                    h-3 w-3 rounded-full   bg-green-900"></span>
+                                    </li>
+                                    <li class="relative"><a href="#">
+                                            <img src="assets/img/profile/user.jpg"
+                                                class="rounded-full ring ring-primary ring-opacity-10" alt="user"></a>
+                                        <span class="absolute bottom-1 -right-[2px] 
+                                    border-white border-2 z-20
+                                    h-3 w-3 rounded-full   bg-green-900"></span>
+                                    </li>
+                                    <li class="relative"><a href="#">
+                                            <img src="assets/img/story/nusiaba-profile.jpg"
+                                                class="rounded-full ring ring-primary ring-opacity-10" alt="user"></a>
+                                        <span class="absolute bottom-1 -right-[2px] 
+                                    border-white border-2 z-20
+                                    h-3 w-3 rounded-full   bg-green-900"></span>
+                                    </li>
+                                    <li class="relative"><a href="#">
+                                            <img src="assets/img/profile/user.jpg"
+                                                class="rounded-full ring ring-primary ring-opacity-10" alt="user"></a>
+                                        <span class="absolute bottom-1 -right-[2px] 
+                                    border-white border-2 z-20
+                                    h-3 w-3 rounded-full   bg-green-900"></span>
+                                    </li>
+                                    <li class="relative"><a href="#">
+                                            <img src="assets/img/story/milton-profile.jpg"
+                                                class="rounded-full ring ring-primary ring-opacity-10" alt="user"></a>
+                                        <span class="absolute bottom-1 -right-[2px] 
+                                    border-white border-2 z-20
+                                    h-3 w-3 rounded-full   bg-green-900"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- members end -->
+                            <div class="absolute top-3 right-[20px] ">
+                                <div class="w-10 h-10 rounded-full
+                             bg-white 
+                         text-sm ring ring-black ring-opacity-10
+                         hover:bg-gray 
+                            flex justify-center items-center">
+                                    <span class="fa-solid fa-chevron-right"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- create room area end -->
+                    <!-- posts start -->
+                    <div class="bg-white  rounded-lg shadow-xl  px-4 mt-8">
+                        <!-- single post -->
+                        <div class="py-4 relative">
+                            <!-- top -->
+                            <div class="flex ">
+                                <!-- left -->
+                                <div>
+                                    <a href="#">
+                                        <img src="assets/img/profile/zukerKakku.jpg" class="rounded-full"
+                                            alt="zuker bhai ring ">
+                                    </a>
+                                </div>
+                                <div class="ml-2">
+                                    <h3 class="text-base ">Mark Zuckerberg</h3>
+                                    <span class="-mt-2 block text-xs text-black text-opacity-60">13 hrs <i
+                                            class="fa-solid fa-earth-africa"></i></span>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 right-5">
+                                <!-- right -->
+                                <div class="text-black text-opacity-70 text-xl">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <!-- body -->
+                            <div class="py-4">
+                                <p class="text-base text-black text-opacity-95 ">Raj Chetty just released groundbreaking
+                                    research on economic opportunity and social mobility using data from social
+                                    connections on Facebook and Instagram. The researchers examined how social
+                                    connections improve a person's chances of
+                                    getting out of poverty, and they showed that more social contact with affluent
+                                    people increases chances of upward
+                                    mobility. We're releasing the privacy-protected datasets that contributed to this
+                                    research so you can check them out
+                                    here: <a href="#" class="text-indigo-300">socialcapital.org</a></p>
+                            </div>
+                            <!-- posts actions -->
+                            <div class="border-t border-secondary-400
+                     border-b border-opacity-20
+                    py-1 mt-3">
+                                <div class="flex ">
+                                    <div class="cursor-pointer
+                             text-black text-opacity-60 capitalize
+                            text-xl hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                            px-11">
+                                        <!-- likes -->
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <span class="text-lg ml-2 inline-block">Like</span>
+                                    </div>
+                                    <div class="cursor-pointer
+                             text-black capitalize text-opacity-60
+                            text-lg ca hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                           px-6 ">
+                                        <!-- comments -->
+                                        <i class="fa-solid fa-comment"></i>
+                                        <span class="text-lg ml-2 inline-block">comment</span>
+                                    </div>
+                                    <div class="cursor-pointer
+                             text-black text-opacity-60 capitalize
+                            text-xl hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                         px-10">
+                                        <!-- share -->
+                                        <i class="fa-solid fa-share"></i>
+                                        <span class="text-lg ml-2 inline-block">share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single post -->
+                        <div class="py-4 relative">
+                            <!-- top -->
+                            <div class="flex ">
+                                <!-- left -->
+                                <div>
+                                    <a href="#">
+                                        <img src="assets/img/profile/zukerKakku.jpg" class="rounded-full"
+                                            alt="zuker bhai ring ">
+                                    </a>
+                                </div>
+                                <div class="ml-2">
+                                    <h3 class="text-base ">Mark Zuckerberg</h3>
+                                    <span class="-mt-2 block text-xs text-black text-opacity-60">13 hrs <i
+                                            class="fa-solid fa-earth-africa"></i></span>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 right-5">
+                                <!-- right -->
+                                <div class="text-black text-opacity-70 text-xl">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <!-- body -->
+                            <div class="py-4 post-body">
+                                <div>
+                                    <h4>Weekend on the lake</h4>
+                                    <img src="assets/img/profile/img-1.jpg" alt="user">
+                                </div>
+                            </div>
+                            <!-- posts actions -->
+                            <div class="border-t border-secondary-400
+                     border-b border-opacity-20
+                    py-1 mt-3">
+                                <div class="flex ">
+                                    <div class="cursor-pointer
+                             text-black text-opacity-60 capitalize
+                            text-xl hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                            px-11">
+                                        <!-- likes -->
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <span class="text-lg ml-2 inline-block">Like</span>
+                                    </div>
+                                    <div class="cursor-pointer
+                             text-black capitalize text-opacity-60
+                            text-lg ca hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                           px-6 ">
+                                        <!-- comments -->
+                                        <i class="fa-solid fa-comment"></i>
+                                        <span class="text-lg ml-2 inline-block">comment</span>
+                                    </div>
+                                    <div class="cursor-pointer
+                             text-black text-opacity-60 capitalize
+                            text-xl hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                         px-10">
+                                        <!-- share -->
+                                        <i class="fa-solid fa-share"></i>
+                                        <span class="text-lg ml-2 inline-block">share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single post -->
+                        <div class="py-4 relative">
+                            <!-- top -->
+                            <div class="flex ">
+                                <!-- left -->
+                                <div>
+                                    <a href="#">
+                                        <img src="assets/img/profile/zukerKakku.jpg" class="rounded-full"
+                                            alt="zuker bhai ring ">
+                                    </a>
+                                </div>
+                                <div class="ml-2">
+                                    <h3 class="text-base ">Mark Zuckerberg</h3>
+                                    <span class="-mt-2 block text-xs text-black text-opacity-60">13 hrs <i
+                                            class="fa-solid fa-earth-africa"></i></span>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 right-5">
+                                <!-- right -->
+                                <div class="text-black text-opacity-70 text-xl">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            <!-- body -->
+                            <div class="py-4">
+                                <p class="text-base text-black text-opacity-95 ">Raj Chetty just released groundbreaking
+                                    research on economic opportunity and social mobility using data from social
+                                    connections on Facebook and Instagram. The researchers examined how social
+                                    connections improve a person's chances of
+                                    getting out of poverty, and they showed that more social contact with affluent
+                                    people increases chances of upward
+                                    mobility. We're releasing the privacy-protected datasets that contributed to this
+                                    research so you can check them out
+                                    here: <a href="#" class="text-indigo-300">socialcapital.org</a></p>
+                            </div>
+                            <!-- posts actions -->
+                            <div class="border-t border-secondary-400
+                     border-b border-opacity-20
+                    py-1 mt-3">
+                                <div class="flex ">
+                                    <div class="cursor-pointer
+                             text-black text-opacity-60 capitalize
+                            text-xl hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                            px-11">
+                                        <!-- likes -->
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        <span class="text-lg ml-2 inline-block">Like</span>
+                                    </div>
+                                    <div class="cursor-pointer
+                             text-black capitalize text-opacity-60
+                            text-lg ca hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                           px-6 ">
+                                        <!-- comments -->
+                                        <i class="fa-solid fa-comment"></i>
+                                        <span class="text-lg ml-2 inline-block">comment</span>
+                                    </div>
+                                    <div class="cursor-pointer
+                             text-black text-opacity-60 capitalize
+                            text-xl hover:bg-secondary-400 hover:bg-opacity-30 py-2 rounded-md
+                         px-10">
+                                        <!-- share -->
+                                        <i class="fa-solid fa-share"></i>
+                                        <span class="text-lg ml-2 inline-block">share</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- posts end -->
+                </div>
+            </section>
+            <aside class="col-span-12 lg:col-span-3  lg:right-sidebar-scroll lg:max-h-screen">
+                <div class="mt-12 pl-5">
+                    <!-- Friend Request -->
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <h5 class="text-lg leading-6 text-black text-opacity-60">Friend Requests</h5>
+                            <a href="#"
+                                class="block capitalize text-lg leading-6 -mt-2 text-primary text-opacity-60">see
+                                all</a>
+                        </div>
+                        <!-- friend list -->
+                        <div>
+                            <ul>
+                                <li>
+                                    <div class="flex py-3 px-2 rounded-md hover:bg-secondary-600 hover:bg-opacity-10">
+                                        <div>
+                                            <a href="#">
+                                                <img src="assets/img/profile/user.jpg" class="rounded-full" alt="user">
+                                            </a>
+                                        </div>
+                                        <div class="ml-3">
+                                            <h2 class="text-lg font-light">Sakil Anwar</h2>
+                                            <div>
+                                                <button type="button"
+                                                    class="bg-primary text-white text-sm capitalize rounded-md py-2 px-5">confirm</button>
+                                                <button type="button"
+                                                    class="bg-black bg-opacity-20 text-black text-sm capitalize  rounded-md py-2 px-5">
+                                                    delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- line -->
+                    <div class="border-b border-b-black border-opacity-10 mt-2"></div>
+                    <!-- birth days -->
+                    <div class="mt-5">
+                        <div>
+                            <h5 class="text-lg leading-6 text-black text-opacity-60">Birthdays</h5>
+                            <div class="py-3 px-2 rounded-md hover:bg-secondary-600 hover:bg-opacity-10">
+                                <span class="text-primary text-lg mr-2"><i class="fa-solid fa-gift"></i></span>
+                                <a href="#" class="text-sm ">Shakil Anwar's </a> <span
+                                    class="text-sm font-light">birthday is today</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- line -->
+                    <div class="border-b border-b-black border-opacity-10 mt-2"></div>
+                    <!-- chat lists -->
+                    <div>
+                        <div class="py-2">
+                            <!-- top -->
+                            <div class="flex items-center">
+                                <h3 class="text-lg leading-6 mt-1 capitalize  mr-5">contacts</h3>
+                                <ul class="flex items-center  w-full justify-end space-x-4 text-black text-opacity-60">
+                                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-ellipsis"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- chat list -->
+                        <ul>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/user.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Sakil Anwar</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/zukerKakku.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Zuker Kakku</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/zukerKakku.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Alon Musk</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/zukerKakku.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Premik purush</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/zukerKakku.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Ami jani Ami K</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/zukerKakku.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Cat Cat</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/zukerKakku.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Sakil Anwar</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a href="#"
+                                    class="flex items-center py-2 px-2 rounded-md hover:bg-black hover:bg-opacity-10">
+                                    <div class="mr-3 relative">
+                                        <img src="assets/img/profile/zukerKakku.jpg"
+                                            class="rounded-full ring ring-primary ring-opacity-10" alt="user">
+                                        <span
+                                            class="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-green-800"></span>
+                                    </div>
+                                    <div>
+                                        <span class="text-black text-opacity-90 text-base">Sakil Anwar</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <!-- from cdn -->
+    <!-- popper.js cdn link -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tooltip.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
